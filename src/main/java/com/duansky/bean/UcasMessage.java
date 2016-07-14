@@ -5,6 +5,7 @@ package com.duansky.bean;
  */
 public enum UcasMessage {
     PASSWORD_ERROR("密码不匹配"),
+    EMPTY_USER("用户不存在"),
     SUCCESS("success"),
     UNKNOWN("error");
 

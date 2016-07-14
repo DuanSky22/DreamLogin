@@ -26,7 +26,7 @@ public class BreakInUcas {
     public BreakInUcas(){
         try {
             upOut = new PrintWriter(new OutputStreamWriter(new FileOutputStream(upsFilePath)));
-            usernameOut = new PrintWriter(new OutputStreamWriter(new FileOutputStream(upsFilePath)));
+            usernameOut = new PrintWriter(new OutputStreamWriter(new FileOutputStream(usernameFilePath)));
         }catch (Exception e){
             System.out.println("wrong file path!");
         }
@@ -81,5 +81,7 @@ public class BreakInUcas {
                 e.printStackTrace();
             }
         }
+        upOut.close();
+        usernameOut.close();
     }
 }
